@@ -12,7 +12,8 @@
 		CD084CEA214E746A00570397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD084CE8214E746A00570397 /* Main.storyboard */; };
 		CD084CEC214E746A00570397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD084CEB214E746A00570397 /* Assets.xcassets */; };
 		CD084CEF214E746A00570397 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD084CED214E746A00570397 /* LaunchScreen.storyboard */; };
-		CD084CF7214EC8F800570397 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD084CF6214EC8F800570397 /* Item.swift */; };
+		CD084CFE214EFD8000570397 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD084CFC214EFD8000570397 /* DataModel.xcdatamodeld */; };
+		CD084D21214F778B00570397 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD084D20214F778B00570397 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,8 @@
 		CD084CEB214E746A00570397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD084CEE214E746A00570397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD084CF0214E746A00570397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD084CF6214EC8F800570397 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CD084CFD214EFD8000570397 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		CD084D20214F778B00570397 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		CD084CF8214EC97D00570397 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CD084D20214F778B00570397 /* CategoryViewController.swift */,
 				CD084CE6214E746A00570397 /* ToDoListViewController.swift */,
 			);
 			path = Controllers;
@@ -94,7 +97,7 @@
 		CD084CFB214EC99C00570397 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				CD084CF6214EC8F800570397 /* Item.swift */,
+				CD084CFC214EFD8000570397 /* DataModel.xcdatamodeld */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -126,11 +129,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "David Gregg";
 				TargetAttributes = {
 					CD084CE0214E746A00570397 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -171,8 +175,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD084D21214F778B00570397 /* CategoryViewController.swift in Sources */,
 				CD084CE7214E746A00570397 /* ToDoListViewController.swift in Sources */,
-				CD084CF7214EC8F800570397 /* Item.swift in Sources */,
+				CD084CFE214EFD8000570397 /* DataModel.xcdatamodeld in Sources */,
 				CD084CE5214E746A00570397 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +218,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -220,6 +226,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -270,6 +277,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -277,6 +285,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -316,7 +325,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidgregg.Todoey1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -331,7 +340,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidgregg.Todoey1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -358,6 +367,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CD084CFC214EFD8000570397 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CD084CFD214EFD8000570397 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = CD084CFD214EFD8000570397 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CD084CD9214E746A00570397 /* Project object */;
 }
