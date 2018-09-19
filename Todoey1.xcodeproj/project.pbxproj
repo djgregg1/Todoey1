@@ -65,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				CD084CE3214E746A00570397 /* Todoey1 */,
+				CD084CF0214E746A00570397 /* Info.plist */,
 				CD084CE2214E746A00570397 /* Products */,
 				05964E90EDAD3746067185F2 /* Pods */,
 				9D22A4567517D8C56E1EB084 /* Frameworks */,
@@ -84,10 +85,9 @@
 			children = (
 				CD084CE4214E746A00570397 /* AppDelegate.swift */,
 				CD084CF8214EC97D00570397 /* Controllers */,
-				CD084CF9214EC98700570397 /* Views */,
 				CD084CFA214EC98E00570397 /* Supporting Files */,
-				CD084CF0214E746A00570397 /* Info.plist */,
 				CD084CFB214EC99C00570397 /* Data Model */,
+				CD084CF9214EC98700570397 /* Views */,
 			);
 			path = Todoey1;
 			sourceTree = "<group>";
